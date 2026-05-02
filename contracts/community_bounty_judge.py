@@ -24,7 +24,7 @@ class CommunityBountyJudge(gl.Contract):
     submissions_count: u256
 
     def __init__(self, bounty_title: str, bounty_criteria: str):
-        self.owner = gl.message.sender_account
+        self.owner = gl.message.sender_address
         self.bounty_title = bounty_title
         self.bounty_criteria = bounty_criteria
         self.submissions_count = 0

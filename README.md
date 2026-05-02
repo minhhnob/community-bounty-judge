@@ -44,6 +44,12 @@ A step-by-step beginner tutorial is included here:
 
 - [From Zero to GenLayer: Building a Community Bounty Judge Intelligent Contract](docs/from-zero-to-genlayer-community-bounty-judge.md)
 
+## Deployment Evidence
+
+The contract was deployed and verified on GenLayer Studionet:
+
+- [Studionet deployment evidence](docs/deployment-studionet.md)
+
 ## Suggested GenLayer Points evidence
 
 - GitHub repository URL with this source code.
