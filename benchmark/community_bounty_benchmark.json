@@ -1,0 +1,315 @@
+[
+  {
+    "id": "case_001_high_quality_tutorial",
+    "category": "tutorial",
+    "bounty": "Create a beginner tutorial explaining how to deploy a GenLayer Intelligent Contract.",
+    "submission": "A complete step-by-step tutorial with architecture diagram, contract code, deployment commands, screenshots, troubleshooting notes, and a small video walkthrough.",
+    "evidence": [
+      "https://github.com/example/genlayer-tutorial",
+      "https://example.com/demo-video"
+    ],
+    "expected_decision": "approve",
+    "expected_score_min": 85,
+    "expected_score_max": 100,
+    "abuse_labels": [],
+    "reason": "Original, useful, verifiable, and directly aligned with the bounty."
+  },
+  {
+    "id": "case_002_medium_educational_post",
+    "category": "education",
+    "bounty": "Explain Optimistic Democracy to new Web3 builders.",
+    "submission": "A 900-word article with a plain-English explanation, a visual metaphor, links to GenLayer docs, and one example use case for DAO grant decisions.",
+    "evidence": [
+      "https://mirror.xyz/example/optimistic-democracy-guide"
+    ],
+    "expected_decision": "approve",
+    "expected_score_min": 65,
+    "expected_score_max": 84,
+    "abuse_labels": [],
+    "reason": "Useful educational content, though less technical than a full tutorial."
+  },
+  {
+    "id": "case_003_low_effort_ai_spam",
+    "category": "content",
+    "bounty": "Write a technical explanation of GenLayer Intelligent Contracts.",
+    "submission": "GenLayer is amazing and AI smart contracts are the future. This project will change everything for blockchain and everyone should use it.",
+    "evidence": [],
+    "expected_decision": "reject",
+    "expected_score_min": 0,
+    "expected_score_max": 25,
+    "abuse_labels": [
+      "low_effort",
+      "missing_evidence",
+      "generic_ai_spam"
+    ],
+    "reason": "Vague, unverifiable, and missing technical substance."
+  },
+  {
+    "id": "case_004_duplicate_tutorial",
+    "category": "tutorial",
+    "bounty": "Submit an original GenLayer tutorial.",
+    "submission": "A tutorial copied from another contributor with only the title and a few phrases changed.",
+    "evidence": [
+      "https://copied-source.example/tutorial",
+      "https://github.com/example/copied-fork"
+    ],
+    "expected_decision": "reject",
+    "expected_score_min": 0,
+    "expected_score_max": 20,
+    "abuse_labels": [
+      "duplicate",
+      "plagiarism"
+    ],
+    "reason": "Not original; bounty should reward the original author only."
+  },
+  {
+    "id": "case_005_fake_github_pr",
+    "category": "github_pr",
+    "bounty": "Submit a merged PR improving GenLayer developer docs.",
+    "submission": "Contributor claims they merged a documentation PR but the evidence URL points to a 404 page.",
+    "evidence": [
+      "https://github.com/genlayer/docs/pull/999999"
+    ],
+    "expected_decision": "reject",
+    "expected_score_min": 0,
+    "expected_score_max": 30,
+    "abuse_labels": [
+      "fake_evidence",
+      "unverifiable_link"
+    ],
+    "reason": "Cannot verify the claimed work."
+  },
+  {
+    "id": "case_006_valid_github_pr",
+    "category": "github_pr",
+    "bounty": "Improve a developer tutorial with working examples.",
+    "submission": "A merged PR adds setup steps, fixes broken CLI commands, and includes screenshots from a successful local run.",
+    "evidence": [
+      "https://github.com/example/project/pull/42"
+    ],
+    "expected_decision": "approve",
+    "expected_score_min": 75,
+    "expected_score_max": 95,
+    "abuse_labels": [],
+    "reason": "Verifiable builder work with practical developer impact."
+  },
+  {
+    "id": "case_007_research_report_with_sources",
+    "category": "research",
+    "bounty": "Research how AI agents can use Intelligent Contracts.",
+    "submission": "A structured research report comparing GenLayer with oracle-based approaches, citing docs, examples, and three agentic commerce scenarios.",
+    "evidence": [
+      "https://github.com/example/genlayer-agent-research/blob/main/report.md"
+    ],
+    "expected_decision": "approve",
+    "expected_score_min": 80,
+    "expected_score_max": 100,
+    "abuse_labels": [],
+    "reason": "High-signal research with sources and clear relevance to AI x Web3 trends."
+  },
+  {
+    "id": "case_008_unsourced_thread",
+    "category": "social_thread",
+    "bounty": "Create an educational Twitter/X thread about GenLayer.",
+    "submission": "A thread with broad claims about AI blockchains but no source links, no examples, and no mention of Optimistic Democracy.",
+    "evidence": [
+      "https://x.com/example/status/123"
+    ],
+    "expected_decision": "needs_review",
+    "expected_score_min": 35,
+    "expected_score_max": 55,
+    "abuse_labels": [
+      "weak_sources"
+    ],
+    "reason": "May have some outreach value but lacks technical grounding."
+  },
+  {
+    "id": "case_009_community_support",
+    "category": "community_support",
+    "bounty": "Help new builders in Discord and document common issues.",
+    "submission": "Contributor answered 15 setup questions, grouped recurring issues into an FAQ, and linked public message references/screenshots.",
+    "evidence": [
+      "https://github.com/example/genlayer-faq",
+      "https://discord.com/channels/example/thread/123"
+    ],
+    "expected_decision": "approve",
+    "expected_score_min": 70,
+    "expected_score_max": 90,
+    "abuse_labels": [],
+    "reason": "Practical community impact and reusable documentation."
+  },
+  {
+    "id": "case_010_sybil_repeated_low_quality",
+    "category": "ambassador",
+    "bounty": "Create original GenLayer educational content.",
+    "submission": "Ten wallet accounts submit near-identical 150-word posts with the same evidence URL and minor word swaps.",
+    "evidence": [
+      "https://medium.com/example/same-post"
+    ],
+    "expected_decision": "reject",
+    "expected_score_min": 0,
+    "expected_score_max": 20,
+    "abuse_labels": [
+      "sybil_pattern",
+      "duplicate",
+      "low_effort"
+    ],
+    "reason": "Repeated low-quality submissions should be capped or rejected."
+  },
+  {
+    "id": "case_011_ai_agent_bounty_completion",
+    "category": "agent_workflow",
+    "bounty": "Build an AI agent workflow that interacts with GenLayer docs or contracts.",
+    "submission": "An open-source agent reads GenLayer docs, generates a deployment checklist, and runs local lint checks. Repo includes logs and reproducible commands.",
+    "evidence": [
+      "https://github.com/example/genlayer-agent-checklist"
+    ],
+    "expected_decision": "approve",
+    "expected_score_min": 80,
+    "expected_score_max": 100,
+    "abuse_labels": [],
+    "reason": "Strong fit for the current AI agents with wallets / autonomous builder tooling trend."
+  },
+  {
+    "id": "case_012_prediction_market_resolution_demo",
+    "category": "prediction_market",
+    "bounty": "Demonstrate a subjective market resolution use case.",
+    "submission": "A demo contract resolves whether a shipped feature met a natural-language milestone, with examples of accepted and rejected claims.",
+    "evidence": [
+      "https://github.com/example/subjective-market-resolution"
+    ],
+    "expected_decision": "approve",
+    "expected_score_min": 78,
+    "expected_score_max": 95,
+    "abuse_labels": [],
+    "reason": "Shows GenLayer's subjective decision-making in a practical prediction/grants context."
+  },
+  {
+    "id": "case_013_broken_demo_repo",
+    "category": "code",
+    "bounty": "Build a working GenLayer demo contract.",
+    "submission": "Repository contains a contract file but no README, no install steps, no tests, and code does not import GenLayer correctly.",
+    "evidence": [
+      "https://github.com/example/broken-genlayer-demo"
+    ],
+    "expected_decision": "reject",
+    "expected_score_min": 10,
+    "expected_score_max": 35,
+    "abuse_labels": [
+      "not_reproducible",
+      "incomplete_code"
+    ],
+    "reason": "Unclear whether the contribution works."
+  },
+  {
+    "id": "case_014_hackathon_project_spotlight",
+    "category": "hackathon",
+    "bounty": "Submit a hackathon project recap with technical details.",
+    "submission": "A recap explains the problem, architecture, contract logic, screenshots, limitations, and next milestones for a GenLayer hackathon project.",
+    "evidence": [
+      "https://github.com/example/hackathon-recap",
+      "https://youtube.com/watch?v=demo"
+    ],
+    "expected_decision": "approve",
+    "expected_score_min": 70,
+    "expected_score_max": 90,
+    "abuse_labels": [],
+    "reason": "Good project milestone evidence and useful ecosystem content."
+  },
+  {
+    "id": "case_015_meme_only_submission",
+    "category": "meme",
+    "bounty": "Create educational GenLayer memes that explain a concept.",
+    "submission": "A single meme image saying 'AI chain go brrr' with no explanation or concept link.",
+    "evidence": [
+      "https://imgur.com/example"
+    ],
+    "expected_decision": "needs_review",
+    "expected_score_min": 20,
+    "expected_score_max": 45,
+    "abuse_labels": [
+      "low_context"
+    ],
+    "reason": "May be community content, but weak educational value."
+  },
+  {
+    "id": "case_016_translated_docs",
+    "category": "localization",
+    "bounty": "Translate a GenLayer tutorial for a non-English community.",
+    "submission": "A Vietnamese translation of a GenLayer starter tutorial with local notes, glossary, and screenshots from a fresh install.",
+    "evidence": [
+      "https://github.com/example/genlayer-vietnamese-guide"
+    ],
+    "expected_decision": "approve",
+    "expected_score_min": 75,
+    "expected_score_max": 95,
+    "abuse_labels": [],
+    "reason": "High practical value for community onboarding and non-English builders."
+  },
+  {
+    "id": "case_017_missing_bounty_alignment",
+    "category": "misc",
+    "bounty": "Build a GenLayer Intelligent Contract demo.",
+    "submission": "A generic Solidity ERC20 token deployed on another chain with no GenLayer components.",
+    "evidence": [
+      "https://github.com/example/erc20-token"
+    ],
+    "expected_decision": "reject",
+    "expected_score_min": 0,
+    "expected_score_max": 20,
+    "abuse_labels": [
+      "irrelevant",
+      "wrong_ecosystem"
+    ],
+    "reason": "Does not satisfy the bounty requirement."
+  },
+  {
+    "id": "case_018_dashboard_with_real_metrics",
+    "category": "analytics",
+    "bounty": "Create a dashboard for GenLayer community activity.",
+    "submission": "A dashboard tracks GitHub commits, docs issues, community tutorials, and bounty submissions with code and data pipeline notes.",
+    "evidence": [
+      "https://github.com/example/genlayer-community-dashboard",
+      "https://example.com/dashboard"
+    ],
+    "expected_decision": "approve",
+    "expected_score_min": 78,
+    "expected_score_max": 95,
+    "abuse_labels": [],
+    "reason": "Measurable and useful for DAO/community operations."
+  },
+  {
+    "id": "case_019_unverifiable_private_doc",
+    "category": "research",
+    "bounty": "Publish a public research report.",
+    "submission": "Contributor says the report exists in a private Google Doc that reviewers cannot access.",
+    "evidence": [
+      "https://docs.google.com/document/d/private"
+    ],
+    "expected_decision": "reject",
+    "expected_score_min": 0,
+    "expected_score_max": 30,
+    "abuse_labels": [
+      "private_evidence",
+      "unverifiable_link"
+    ],
+    "reason": "Evidence must be public for transparent review."
+  },
+  {
+    "id": "case_020_ambiguous_originality",
+    "category": "content",
+    "bounty": "Create original educational content about GenLayer.",
+    "submission": "A polished article with useful examples, but large sections closely resemble the official docs and citations are incomplete.",
+    "evidence": [
+      "https://mirror.xyz/example/close-paraphrase"
+    ],
+    "expected_decision": "needs_review",
+    "expected_score_min": 45,
+    "expected_score_max": 65,
+    "abuse_labels": [
+      "possible_paraphrase",
+      "needs_human_audit"
+    ],
+    "reason": "Could be useful, but originality must be checked before approval."
+  }
+]

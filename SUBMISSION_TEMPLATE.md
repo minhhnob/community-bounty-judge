@@ -1,67 +1,89 @@
 # GenLayer Points Submission Template
 
-Use this after publishing the repo and/or deploying the contract.
+Use this for the follow-up submission after reviewer feedback.
 
-## Best immediate target — Mission: From Zero to GenLayer
+## Short response to reviewer
 
-Contribution type / mission:
-From Zero to GenLayer: An Introductory GenLayer Tutorial
+```text
+Thank you for the feedback. I updated the project to make it more practical and abuse-resistant.
 
-Description:
-Created a beginner-friendly GenLayer tutorial around CommunityBountyJudge, an Intelligent Contract that evaluates subjective bounty submissions using AI consensus. The tutorial explains what GenLayer is, why subjective validation matters, how the contract is structured, how nondeterministic AI execution works, and how comparative equivalence principles help validators agree on the important outcome. The repository includes source code, README, and a step-by-step tutorial for new builders.
+The project is now positioned as an AI-native Proof-of-Contribution and Anti-Abuse Judge for Web3 bounty systems, not only a simple scoring demo. I added a 20-case benchmark dataset covering realistic cases such as high-quality tutorials, low-effort AI spam, duplicate submissions, fake evidence, valid GitHub PRs, unverifiable/private links, community support, AI-agent workflows, and sybil-like repeated submissions.
 
-Evidence 1:
-Description: Introductory tutorial explaining the Intelligent Contract
-URL: https://github.com/minhhnob/community-bounty-judge/blob/main/docs/from-zero-to-genlayer-community-bounty-judge.md
+The purpose of the benchmark is to test whether the GenLayer Intelligent Contract can make useful subjective decisions for real bounty workflows: approve valuable work, reject abusive/unverifiable work, and flag ambiguous cases for review.
 
-Evidence 2:
-Description: GitHub repository with contract source and README
-URL: https://github.com/minhhnob/community-bounty-judge
+I also added deployment evidence, benchmark results, and documentation explaining how this uses GenLayer's subjective decision-making for real Web3 community, DAO, hackathon, grant, and contributor reputation workflows.
+```
 
-Evidence 3:
-Description: Main contract source code
-URL: https://github.com/minhhnob/community-bounty-judge/blob/main/contracts/community_bounty_judge.py
+## Updated Projects & Milestones description
 
-## Path 1 — Builder: GitHub Repository / Projects & Milestones
+```text
+Built CommunityBountyJudge, an AI-native Proof-of-Contribution and Anti-Abuse Judge for Web3 bounty systems using GenLayer Intelligent Contracts.
 
-Contribution type: GitHub Repository or Projects & Milestones
+The project addresses a practical problem in current Web3 communities: subjective contribution review for tutorials, GitHub PRs, dashboards, research reports, community support, hackathon milestones, and ambassador work. These contributions are valuable but hard to judge with deterministic smart contracts, and they are increasingly exposed to abuse from generic AI spam, duplicate submissions, fake evidence, and sybil farming.
 
-Description:
-Built CommunityBountyJudge, a GenLayer Intelligent Contract that evaluates subjective bounty submissions using AI consensus. The contract checks public evidence URLs, contributor summaries, and bounty criteria, then returns an accepted/rejected decision with a quality score. This demonstrates a practical GenLayer use case for community contribution review and bounty workflows.
+The repository includes:
+- a deployed MVP GenLayer contract
+- an abuse-aware v2 reference contract
+- a 20-case benchmark dataset
+- benchmark methodology and expected results
+- real-world architecture documentation
+- a beginner tutorial and deployment evidence
 
-Evidence 1:
-Description: GitHub repository with contract source and README
-URL: https://github.com/minhhnob/community-bounty-judge
+The benchmark tests realistic cases: high-quality tutorials, low-effort AI spam, duplicate/plagiarized content, fake GitHub PR evidence, valid PRs, sourced research, weak social threads, community support, AI-agent workflows, subjective milestone resolution, broken demo repos, localization work, dashboards, private/unverifiable evidence, and ambiguous originality cases.
 
-Evidence 2:
-Description: Main contract source code
-URL: https://github.com/minhhnob/community-bounty-judge/blob/main/contracts/community_bounty_judge.py
+This demonstrates how GenLayer's Optimistic Democracy and Intelligent Contracts can support practical Web3 workflows: DAO bounty judging, grant milestone evaluation, retroactive public goods review, anti-sybil quest systems, contributor reputation, and AI-agent work verification.
+```
 
-Evidence 3:
-Description: Beginner tutorial and project walkthrough
-URL: https://github.com/minhhnob/community-bounty-judge/blob/main/docs/from-zero-to-genlayer-community-bounty-judge.md
+## Evidence links
 
-## Path 2 — Builder: Contract Deployed
+Evidence 1 — GitHub repository
 
-Contribution type: Contract Deployed
+```text
+https://github.com/minhhnob/community-bounty-judge
+```
 
-Description:
-Deployed CommunityBountyJudge, a non-trivial GenLayer Intelligent Contract for subjective evaluation of ecosystem bounty submissions. It uses a comparative equivalence principle to help validators agree on acceptance outcome and quality band.
+Evidence 2 — Deployed contract evidence
 
-Evidence 1:
-Description: Deployment transaction or contract address on GenLayer
-URL: PASTE_EXPLORER_TX_OR_CONTRACT_URL_HERE
+```text
+https://github.com/minhhnob/community-bounty-judge/blob/main/docs/deployment-studionet.md
+```
 
-Evidence 2:
-Description: Source code and documentation
-URL: https://github.com/minhhnob/community-bounty-judge
+Evidence 3 — Benchmark dataset
 
-## Profile checklist before submitting
+```text
+https://github.com/minhhnob/community-bounty-judge/blob/main/benchmark/community_bounty_benchmark.json
+```
 
-- Connect wallet with SIWE at https://portal.genlayer.foundation/
-- Complete display name and email in profile
-- Sign up as Builder / complete Builder Welcome
-- Link GitHub OAuth under profile
-- Ensure repo is public
-- Add evidence as URLs only
-- Complete reCAPTCHA
+Evidence 4 — Benchmark report
+
+```text
+https://github.com/minhhnob/community-bounty-judge/blob/main/benchmark/results.md
+```
+
+Evidence 5 — Real-world design / Web3 trend alignment
+
+```text
+https://github.com/minhhnob/community-bounty-judge/blob/main/docs/real-world-design.md
+```
+
+Evidence 6 — Abuse-aware v2 contract reference
+
+```text
+https://github.com/minhhnob/community-bounty-judge/blob/main/contracts/community_bounty_judge_v2.py
+```
+
+Evidence 7 — Original tutorial
+
+```text
+https://github.com/minhhnob/community-bounty-judge/blob/main/docs/from-zero-to-genlayer-community-bounty-judge.md
+```
+
+## Reviewer-facing checklist
+
+- [x] Deployed MVP contract evidence included
+- [x] Dataset / benchmark added
+- [x] Abuse model documented
+- [x] Web3 trend alignment documented
+- [x] Practical DAO / grants / hackathon / reputation use cases explained
+- [x] v2 reference contract added for categories, abuse flags, and needs-review state
+- [x] GitHub evidence links ready
